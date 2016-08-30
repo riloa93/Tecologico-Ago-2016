@@ -1,0 +1,7 @@
+Metodo random para colocar las reinas
+Revisar si hay mas reinas atacando en alguna direccion
+Metodo mover reinas hacia izquierda o derecha en el grid
+asignar 0 o 1 para identificar si esta la reina en alguna posicion
+Guardar soluciones encontradas en Grid
+Recursividad para reinicar el metodo para una nueva soluciones
+Comparar si no existe ya esa solucion
