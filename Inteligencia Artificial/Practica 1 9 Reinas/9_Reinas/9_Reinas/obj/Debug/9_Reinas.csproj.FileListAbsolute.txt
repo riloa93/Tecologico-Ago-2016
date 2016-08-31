@@ -7,3 +7,6 @@ C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\9_Reinas\9_Reinas\obj\Debug\_
 C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\9_Reinas\9_Reinas\obj\Debug\9_Reinas.csproj.GenerateResource.Cache
 C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\9_Reinas\9_Reinas\obj\Debug\9_Reinas.exe
 C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\9_Reinas\9_Reinas\obj\Debug\9_Reinas.pdb
+C:\ITN\GitHub ITN\Inteligencia Artificial\Practica 1 9 Reinas\9_Reinas\9_Reinas\bin\Debug\9_Reinas.exe.config
+C:\ITN\GitHub ITN\Inteligencia Artificial\Practica 1 9 Reinas\9_Reinas\9_Reinas\obj\Debug\9_Reinas.exe
+C:\ITN\GitHub ITN\Inteligencia Artificial\Practica 1 9 Reinas\9_Reinas\9_Reinas\obj\Debug\9_Reinas.pdb
