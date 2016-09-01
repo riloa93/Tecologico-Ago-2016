@@ -1,0 +1,9 @@
+c:\users\pbass\documents\visual studio 2012\Projects\Damas\Damas\bin\Debug\Damas.exe.config
+c:\users\pbass\documents\visual studio 2012\Projects\Damas\Damas\bin\Debug\Damas.exe
+c:\users\pbass\documents\visual studio 2012\Projects\Damas\Damas\bin\Debug\Damas.pdb
+c:\users\pbass\documents\visual studio 2012\Projects\Damas\Damas\obj\Debug\Damas.csprojResolveAssemblyReference.cache
+c:\users\pbass\documents\visual studio 2012\Projects\Damas\Damas\obj\Debug\Damas.Form1.resources
+c:\users\pbass\documents\visual studio 2012\Projects\Damas\Damas\obj\Debug\Damas.Properties.Resources.resources
+c:\users\pbass\documents\visual studio 2012\Projects\Damas\Damas\obj\Debug\Damas.csproj.GenerateResource.Cache
+c:\users\pbass\documents\visual studio 2012\Projects\Damas\Damas\obj\Debug\Damas.exe
+c:\users\pbass\documents\visual studio 2012\Projects\Damas\Damas\obj\Debug\Damas.pdb

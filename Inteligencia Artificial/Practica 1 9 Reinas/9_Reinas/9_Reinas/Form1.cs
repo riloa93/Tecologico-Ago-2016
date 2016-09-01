@@ -16,6 +16,7 @@ namespace _9_Reinas
         ArrayList encontradas = new ArrayList();
         int soluciones = 352, cont = 0;
         string[,] tabla = new string[9, 9];
+
         public frmPal()
         {
             InitializeComponent();
@@ -25,40 +26,45 @@ namespace _9_Reinas
         private void btnComenzar_Click(object sender, EventArgs e)
         {
             tabla[0,0] = "Q";
-            /*tabla[1, 0] = "Q";
-            tabla[2, 0] = "Q";
-            tabla[3, 0] = "Q";
-            tabla[4, 0] = "Q";
-            tabla[5, 0] = "Q";
-            tabla[6, 0] = "Q";
-            tabla[7, 0] = "Q";
-            tabla[8, 0] = "Q";*/
-
             Comenzar_Recorrido();
         }
 
         private void Comenzar_Recorrido()
         {
-            bool movValido;
-            while (encontradas.Count == soluciones)
+            bool solEncontrada;
+            while (encontradas.Count < soluciones)
             {
+                #region INICIO FALLIDO
                 for (int f = 0; f < tabla.Length; f++)
                 {
+
+                    //MIRAR YO DONDE VOY A PONER LA Q
+                    if (f > 0)
+                    {
+                        tabla[f, 0] = "Q";
+                    }
+
                     for (int c = 0; c < tabla.Length; c++)
                     {
-                        if(tabla[f, c] == "Q")
+                        //Enviar al metodo del Carlos (Yo desde aqui envio fila,columna)
+                        if (solEncontrada)
                         {
-                            movValido = Movimiento_Arriba(f,c);
-                            if (movValido)
-                            {
-                                //Aqui iria tu metodo para checar si hay ataques o no
-                            }
+                            //Recibir las coordeadas donde estan las reinas y guardar la solucion
+                            break;
                         }
                     }
                 }
+                #endregion
+                //CHECAR COMO COORDINAR LA SIGUIENTE REINAR QUE SE COLOCARA Y TAMBIEN CHECAR COMO VOLVER A EMPEZAR
+                
+                
             }
         }
 
+
+
+
+        #region MOVIMIENTOS FALSE
         private bool Movimiento_Arriba(int fila,int col)
         {
             bool valido = true;
@@ -102,10 +108,9 @@ namespace _9_Reinas
         private bool Movimiento_Diagonal_Iiz(int fila, int col)
         {
             bool valido = true;
-
-
-
+        
             return valido;
         }
+        #endregion
     }
 }

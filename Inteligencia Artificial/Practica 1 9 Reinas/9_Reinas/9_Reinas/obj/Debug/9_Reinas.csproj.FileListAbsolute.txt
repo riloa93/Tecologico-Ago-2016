@@ -10,3 +10,9 @@ C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\9_Reinas\9_Reinas\obj\Debug\9
 C:\ITN\GitHub ITN\Inteligencia Artificial\Practica 1 9 Reinas\9_Reinas\9_Reinas\bin\Debug\9_Reinas.exe.config
 C:\ITN\GitHub ITN\Inteligencia Artificial\Practica 1 9 Reinas\9_Reinas\9_Reinas\obj\Debug\9_Reinas.exe
 C:\ITN\GitHub ITN\Inteligencia Artificial\Practica 1 9 Reinas\9_Reinas\9_Reinas\obj\Debug\9_Reinas.pdb
+C:\ITN\GitHub ITN\Inteligencia Artificial\Practica 1 9 Reinas\9_Reinas\9_Reinas\bin\Debug\9_Reinas.exe
+C:\ITN\GitHub ITN\Inteligencia Artificial\Practica 1 9 Reinas\9_Reinas\9_Reinas\bin\Debug\9_Reinas.pdb
+C:\ITN\GitHub ITN\Inteligencia Artificial\Practica 1 9 Reinas\9_Reinas\9_Reinas\obj\Debug\9_Reinas.csprojResolveAssemblyReference.cache
+C:\ITN\GitHub ITN\Inteligencia Artificial\Practica 1 9 Reinas\9_Reinas\9_Reinas\obj\Debug\_9_Reinas.frmPal.resources
+C:\ITN\GitHub ITN\Inteligencia Artificial\Practica 1 9 Reinas\9_Reinas\9_Reinas\obj\Debug\_9_Reinas.Properties.Resources.resources
+C:\ITN\GitHub ITN\Inteligencia Artificial\Practica 1 9 Reinas\9_Reinas\9_Reinas\obj\Debug\9_Reinas.csproj.GenerateResource.Cache
