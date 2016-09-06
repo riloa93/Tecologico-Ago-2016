@@ -7,3 +7,12 @@ c:\users\pbass\documents\visual studio 2012\Projects\Damas\Damas\obj\Debug\Damas
 c:\users\pbass\documents\visual studio 2012\Projects\Damas\Damas\obj\Debug\Damas.csproj.GenerateResource.Cache
 c:\users\pbass\documents\visual studio 2012\Projects\Damas\Damas\obj\Debug\Damas.exe
 c:\users\pbass\documents\visual studio 2012\Projects\Damas\Damas\obj\Debug\Damas.pdb
+C:\ITN\GitHub ITN\Inteligencia Artificial\Apoyo Reinas\Damas\Damas\bin\Debug\Damas.exe.config
+C:\ITN\GitHub ITN\Inteligencia Artificial\Apoyo Reinas\Damas\Damas\obj\Debug\Damas.exe
+C:\ITN\GitHub ITN\Inteligencia Artificial\Apoyo Reinas\Damas\Damas\obj\Debug\Damas.pdb
+C:\ITN\GitHub ITN\Inteligencia Artificial\Apoyo Reinas\Damas\Damas\bin\Debug\Damas.exe
+C:\ITN\GitHub ITN\Inteligencia Artificial\Apoyo Reinas\Damas\Damas\bin\Debug\Damas.pdb
+C:\ITN\GitHub ITN\Inteligencia Artificial\Apoyo Reinas\Damas\Damas\obj\Debug\Damas.csprojResolveAssemblyReference.cache
+C:\ITN\GitHub ITN\Inteligencia Artificial\Apoyo Reinas\Damas\Damas\obj\Debug\Damas.Form1.resources
+C:\ITN\GitHub ITN\Inteligencia Artificial\Apoyo Reinas\Damas\Damas\obj\Debug\Damas.Properties.Resources.resources
+C:\ITN\GitHub ITN\Inteligencia Artificial\Apoyo Reinas\Damas\Damas\obj\Debug\Damas.csproj.GenerateResource.Cache

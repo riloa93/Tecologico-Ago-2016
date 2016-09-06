@@ -1,0 +1,9 @@
+C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\Viajero_P2\Viajero_P2\bin\Debug\Viajero_P2.exe.config
+C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\Viajero_P2\Viajero_P2\bin\Debug\Viajero_P2.exe
+C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\Viajero_P2\Viajero_P2\bin\Debug\Viajero_P2.pdb
+C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\Viajero_P2\Viajero_P2\obj\Debug\Viajero_P2.csprojResolveAssemblyReference.cache
+C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\Viajero_P2\Viajero_P2\obj\Debug\Viajero_P2.Form1.resources
+C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\Viajero_P2\Viajero_P2\obj\Debug\Viajero_P2.Properties.Resources.resources
+C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\Viajero_P2\Viajero_P2\obj\Debug\Viajero_P2.csproj.GenerateResource.Cache
+C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\Viajero_P2\Viajero_P2\obj\Debug\Viajero_P2.exe
+C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\Viajero_P2\Viajero_P2\obj\Debug\Viajero_P2.pdb

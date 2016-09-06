@@ -23,6 +23,7 @@ namespace Damas
 
         }
 
+        //Busca el entero con el que realiza la formula para decidir si existe o no ataque y retorna el coste de la posicion 
         static int CalFitness(int[] Data)
         {
             int Menos = Data.Length;
@@ -101,6 +102,8 @@ namespace Damas
             }
             return _result.ToArray();
         }
+
+        //Realiza las tareas de busqueda por medio de las permutaciones y el metodo de findCal
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
             int numm = Convert.ToInt16(e.Argument.ToString());
@@ -162,6 +165,7 @@ namespace Damas
             
         }
 
+        //Se instancia el StopWatch y en el evento del click se envia el proceso en el BackgroundWorker
         System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
         private void button1_Click(object sender, EventArgs e)
         {
@@ -173,6 +177,7 @@ namespace Damas
             
         }
 
+        //Aqui finaliza y manda el mensaje de terminacion y detiene el StopWatch y lo resetea
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             MessageBox.Show("OK! "+sw.ElapsedMilliseconds.ToString()+" ms");
@@ -181,6 +186,7 @@ namespace Damas
             button1.Enabled = true;
         }
 
+        //Aqui lo que hace es que al hacer la seleccion del indice del listbox manda al metodo que sigue de este y dibuja la solucion
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (backgroundWorker1.IsBusy)
@@ -236,6 +242,11 @@ namespace Damas
         }
 
         private void Form1_BindingContextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
