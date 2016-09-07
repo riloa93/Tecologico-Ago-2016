@@ -28,26 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pctbMapa = new System.Windows.Forms.PictureBox();
             this.lblOrigen = new System.Windows.Forms.Label();
             this.txtOrigen = new System.Windows.Forms.TextBox();
             this.txtDestino = new System.Windows.Forms.TextBox();
             this.lblDestino = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lsbRutas = new System.Windows.Forms.ListBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pctbMapa)).BeginInit();
+            this.grdCostes = new System.Windows.Forms.DataGridView();
+            this.pctbMapa = new System.Windows.Forms.PictureBox();
+            this.Ruta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CosteT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdCostes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctbMapa)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pctbMapa
-            // 
-            this.pctbMapa.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pctbMapa.Location = new System.Drawing.Point(0, 0);
-            this.pctbMapa.Name = "pctbMapa";
-            this.pctbMapa.Size = new System.Drawing.Size(573, 469);
-            this.pctbMapa.TabIndex = 0;
-            this.pctbMapa.TabStop = false;
             // 
             // lblOrigen
             // 
@@ -94,6 +88,7 @@
             this.btnCalcular.TabIndex = 5;
             this.btnCalcular.Text = "Encontrar Ruta";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // panel1
             // 
@@ -107,34 +102,65 @@
             this.panel1.Size = new System.Drawing.Size(231, 223);
             this.panel1.TabIndex = 6;
             // 
-            // lsbRutas
+            // grdCostes
             // 
-            this.lsbRutas.BackColor = System.Drawing.SystemColors.Control;
-            this.lsbRutas.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lsbRutas.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lsbRutas.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lsbRutas.FormattingEnabled = true;
-            this.lsbRutas.ItemHeight = 20;
-            this.lsbRutas.Location = new System.Drawing.Point(573, 249);
-            this.lsbRutas.Name = "lsbRutas";
-            this.lsbRutas.Size = new System.Drawing.Size(249, 220);
-            this.lsbRutas.TabIndex = 7;
+            this.grdCostes.AllowUserToAddRows = false;
+            this.grdCostes.AllowUserToDeleteRows = false;
+            this.grdCostes.AllowUserToResizeColumns = false;
+            this.grdCostes.AllowUserToResizeRows = false;
+            this.grdCostes.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.grdCostes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.grdCostes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdCostes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Ruta,
+            this.CosteT});
+            this.grdCostes.Location = new System.Drawing.Point(579, 248);
+            this.grdCostes.Name = "grdCostes";
+            this.grdCostes.ReadOnly = true;
+            this.grdCostes.Size = new System.Drawing.Size(240, 150);
+            this.grdCostes.TabIndex = 7;
+            // 
+            // pctbMapa
+            // 
+            this.pctbMapa.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pctbMapa.Image = global::Viajero_P2.Properties.Resources.RutasMod;
+            this.pctbMapa.Location = new System.Drawing.Point(0, 0);
+            this.pctbMapa.Name = "pctbMapa";
+            this.pctbMapa.Size = new System.Drawing.Size(573, 469);
+            this.pctbMapa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctbMapa.TabIndex = 0;
+            this.pctbMapa.TabStop = false;
+            // 
+            // Ruta
+            // 
+            this.Ruta.HeaderText = "Ruta";
+            this.Ruta.Name = "Ruta";
+            this.Ruta.ReadOnly = true;
+            this.Ruta.Width = 130;
+            // 
+            // CosteT
+            // 
+            this.CosteT.HeaderText = "Coste Total";
+            this.CosteT.Name = "CosteT";
+            this.CosteT.ReadOnly = true;
+            this.CosteT.Width = 67;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(822, 469);
-            this.Controls.Add(this.lsbRutas);
+            this.Controls.Add(this.grdCostes);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pctbMapa);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Viajero";
-            ((System.ComponentModel.ISupportInitialize)(this.pctbMapa)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdCostes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctbMapa)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -148,7 +174,9 @@
         private System.Windows.Forms.Label lblDestino;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ListBox lsbRutas;
+        private System.Windows.Forms.DataGridView grdCostes;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ruta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CosteT;
     }
 }
 
