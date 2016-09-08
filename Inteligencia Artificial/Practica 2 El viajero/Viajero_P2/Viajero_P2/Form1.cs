@@ -54,12 +54,11 @@ namespace Viajero_P2
             }
         }
 
-        int costeActual = 0, costeTotal = 0;
         ArrayList lugar, coste;
         private void Comenzar_Recorrido()
         {
             int origen = Convert.ToInt32(txtOrigen.Text), destino = Convert.ToInt32(txtDestino.Text);
-            int temp = origen;
+            int temp = origen - 1; 
             lugar = new ArrayList(); coste = new ArrayList();
 
             if (destino < origen)
@@ -68,19 +67,30 @@ namespace Viajero_P2
             }
             else
             {
-                //El mio
-            }
-            for (; origen < Des_Has.Length -1; origen++)
-            {
-                for (int des = 0; des < Des_Has.Length -1; des++)
+                while (origen < 20)
                 {
-                    if (Des_Has[origen, des] == 0) { }
-                    else
+                    for (int des = 0; des < 20; des++)
                     {
-                        lugar.Add(origen += temp);
-                        coste.Add(Des_Has[origen, des]); 
+                        if (Des_Has[temp, des] == 0) { }
+                        else
+                        {
+                            if (des < destino)
+                            {
+
+                            }
+                            else { lugar.Add(origen); coste.Add(Des_Has[temp, des]); }
+                        }
                     }
+
+                    if (origen == destino) break;
+                    else { temp++;   origen++; }
                 }
+
+                for (int i = 0; i < lugar.Count; i++)
+                {
+                    grdCostes.Rows.Add(lugar[i].ToString(),coste[i].ToString());
+                }
+                //El mio
             }
         }
     }
