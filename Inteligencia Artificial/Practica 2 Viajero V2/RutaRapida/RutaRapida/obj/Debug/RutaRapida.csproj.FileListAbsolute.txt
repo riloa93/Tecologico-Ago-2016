@@ -1,0 +1,18 @@
+c:\users\x-pc\documents\visual studio 2012\Projects\RutaRapida\RutaRapida\bin\Debug\RutaRapida.exe.config
+c:\users\x-pc\documents\visual studio 2012\Projects\RutaRapida\RutaRapida\bin\Debug\RutaRapida.exe
+c:\users\x-pc\documents\visual studio 2012\Projects\RutaRapida\RutaRapida\bin\Debug\RutaRapida.pdb
+c:\users\x-pc\documents\visual studio 2012\Projects\RutaRapida\RutaRapida\obj\Debug\RutaRapida.csprojResolveAssemblyReference.cache
+c:\users\x-pc\documents\visual studio 2012\Projects\RutaRapida\RutaRapida\obj\Debug\RutaRapida.Form1.resources
+c:\users\x-pc\documents\visual studio 2012\Projects\RutaRapida\RutaRapida\obj\Debug\RutaRapida.Properties.Resources.resources
+c:\users\x-pc\documents\visual studio 2012\Projects\RutaRapida\RutaRapida\obj\Debug\RutaRapida.csproj.GenerateResource.Cache
+c:\users\x-pc\documents\visual studio 2012\Projects\RutaRapida\RutaRapida\obj\Debug\RutaRapida.exe
+c:\users\x-pc\documents\visual studio 2012\Projects\RutaRapida\RutaRapida\obj\Debug\RutaRapida.pdb
+C:\ITN\Inteligencia Artificial\Practica 2 Ruta Rapida\RutaRapida\RutaRapida\bin\Debug\RutaRapida.exe.config
+C:\ITN\Inteligencia Artificial\Practica 2 Ruta Rapida\RutaRapida\RutaRapida\obj\Debug\RutaRapida.exe
+C:\ITN\Inteligencia Artificial\Practica 2 Ruta Rapida\RutaRapida\RutaRapida\obj\Debug\RutaRapida.pdb
+C:\ITN\Inteligencia Artificial\Practica 2 Ruta Rapida\RutaRapida\RutaRapida\bin\Debug\RutaRapida.exe
+C:\ITN\Inteligencia Artificial\Practica 2 Ruta Rapida\RutaRapida\RutaRapida\bin\Debug\RutaRapida.pdb
+C:\ITN\Inteligencia Artificial\Practica 2 Ruta Rapida\RutaRapida\RutaRapida\obj\Debug\RutaRapida.csprojResolveAssemblyReference.cache
+C:\ITN\Inteligencia Artificial\Practica 2 Ruta Rapida\RutaRapida\RutaRapida\obj\Debug\RutaRapida.Properties.Resources.resources
+C:\ITN\Inteligencia Artificial\Practica 2 Ruta Rapida\RutaRapida\RutaRapida\obj\Debug\RutaRapida.csproj.GenerateResource.Cache
+C:\ITN\Inteligencia Artificial\Practica 2 Ruta Rapida\RutaRapida\RutaRapida\obj\Debug\RutaRapida.frmPal.resources
