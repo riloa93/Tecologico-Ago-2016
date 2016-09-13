@@ -1,0 +1,19 @@
+No Control
+Nombres 
+Carreras
+Fecha de egreso
+Titulado o no
+Trabaja
+Lugar de trabajo
+Puesto
+Contacto
+Telefono
+Correo Electronico
+---------------------------------------------------------
+PAgina que de de alta noticias (textos y fotos) como tipo blog (mateniendo un maximo de noticias
+y las otras se vayan eliminando o ya no se vean (O control para administrar que se muestra y qeu no)
+----------------------------------------------------------------------------------------------------
+Roles
+Egresado, secretario(a) y administrador
+----------------------------------------------------------------------------------------------------
+Cuadro de noticias para crear las noticias y subirlas (Es un control de Ajax)

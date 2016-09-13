@@ -67,6 +67,7 @@ namespace Viajero_P2
             }
             else
             {
+                lugar.Add(origen); coste.Add(0);
                 while (origen < 20)
                 {
                     for (int des = 0; des < 20; des++)
