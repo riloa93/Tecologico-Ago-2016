@@ -1,0 +1,21 @@
+C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\P1_U2_BaseConocimiento\P1_U2_BaseConocimiento\bin\Debug\P1_U2_BaseConocimiento.exe.config
+C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\P1_U2_BaseConocimiento\P1_U2_BaseConocimiento\obj\Debug\P1_U2_BaseConocimiento.csprojResolveAssemblyReference.cache
+C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\P1_U2_BaseConocimiento\P1_U2_BaseConocimiento\obj\Debug\P1_U2_BaseConocimiento.Form1.resources
+C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\P1_U2_BaseConocimiento\P1_U2_BaseConocimiento\obj\Debug\P1_U2_BaseConocimiento.FrmAgregarBase.resources
+C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\P1_U2_BaseConocimiento\P1_U2_BaseConocimiento\obj\Debug\P1_U2_BaseConocimiento.Properties.Resources.resources
+C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\P1_U2_BaseConocimiento\P1_U2_BaseConocimiento\obj\Debug\P1_U2_BaseConocimiento.csproj.GenerateResource.Cache
+C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\P1_U2_BaseConocimiento\P1_U2_BaseConocimiento\bin\Debug\P1_U2_BaseConocimiento.exe
+C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\P1_U2_BaseConocimiento\P1_U2_BaseConocimiento\bin\Debug\P1_U2_BaseConocimiento.pdb
+C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\P1_U2_BaseConocimiento\P1_U2_BaseConocimiento\obj\Debug\P1_U2_BaseConocimiento.exe
+C:\ITN\Inteligencia Artificial\Practica 1 9 Reinas\P1_U2_BaseConocimiento\P1_U2_BaseConocimiento\obj\Debug\P1_U2_BaseConocimiento.pdb
+C:\ITN\Inteligencia Artificial\Unidad 2\P1_U2_BaseConocimiento\P1_U2_BaseConocimiento\bin\Debug\P1_U2_BaseConocimiento.exe.config
+C:\ITN\Inteligencia Artificial\Unidad 2\P1_U2_BaseConocimiento\P1_U2_BaseConocimiento\obj\Debug\P1_U2_BaseConocimiento.exe
+C:\ITN\Inteligencia Artificial\Unidad 2\P1_U2_BaseConocimiento\P1_U2_BaseConocimiento\obj\Debug\P1_U2_BaseConocimiento.pdb
+C:\ITN\Inteligencia Artificial\Unidad 2\P1_U2_BaseConocimiento\P1_U2_BaseConocimiento\bin\Debug\P1_U2_BaseConocimiento.exe
+C:\ITN\Inteligencia Artificial\Unidad 2\P1_U2_BaseConocimiento\P1_U2_BaseConocimiento\bin\Debug\P1_U2_BaseConocimiento.pdb
+C:\ITN\Inteligencia Artificial\Unidad 2\P1_U2_BaseConocimiento\P1_U2_BaseConocimiento\obj\Debug\P1_U2_BaseConocimiento.csprojResolveAssemblyReference.cache
+C:\ITN\Inteligencia Artificial\Unidad 2\P1_U2_BaseConocimiento\P1_U2_BaseConocimiento\obj\Debug\P1_U2_BaseConocimiento.Form1.resources
+C:\ITN\Inteligencia Artificial\Unidad 2\P1_U2_BaseConocimiento\P1_U2_BaseConocimiento\obj\Debug\P1_U2_BaseConocimiento.FrmAgregarBase.resources
+C:\ITN\Inteligencia Artificial\Unidad 2\P1_U2_BaseConocimiento\P1_U2_BaseConocimiento\obj\Debug\P1_U2_BaseConocimiento.Properties.Resources.resources
+C:\ITN\Inteligencia Artificial\Unidad 2\P1_U2_BaseConocimiento\P1_U2_BaseConocimiento\obj\Debug\P1_U2_BaseConocimiento.csproj.GenerateResource.Cache
+C:\ITN\Inteligencia Artificial\Unidad 2\P1_U2_BaseConocimiento\P1_U2_BaseConocimiento\obj\Debug\P1_U2_BaseConocimiento.Frm_Estatico.resources
