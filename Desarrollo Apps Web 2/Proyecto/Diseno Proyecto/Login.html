@@ -5,6 +5,7 @@
   <title>Login Egresados</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="">
 </head>
 
 <body>
@@ -15,18 +16,81 @@
     <div class="col-md-4">
       <section class="login-form">
         <form method="post" action="#" role="login">
-          <img src="http://i.imgur.com/RcmcLv4.png" class="img-responsive" alt="" />
-          <input type="email" name="email" placeholder="Email" required class="form-control input-lg" />
+          <img src="./img/Login/icon.png" class="img-responsive" alt="" />
+            <input type="text" name="NoControl" placeholder="Num. de Control" required class="form-control input-lg" />
+            <input type="password" class="form-control input-lg" id="password" placeholder="Contraseña" required="" />
+            <div class="pwstrength_viewport_progress">          </div> 
+          <button type="submit" name="go" class="btn btn-lg btn-primary btn-block">Iniciar Sesión</button>
           
-          <input type="password" class="form-control input-lg" id="password" placeholder="Password" required="" />
-           
-          <div class="pwstrength_viewport_progress"></div>
-          
-          <button type="submit" name="go" class="btn btn-lg btn-primary btn-block">Sign in</button>
+          <!--Modal-->
           <div>
-            <a href="#">Create account</a> or <a href="#">reset password</a>
+            <a data-toggle="modal" data-target="#RegModal">Crear Cuenta</a> | <a href="#">Olvidé mi contraseña</a>
+
+            <div class="modal fade" id="RegModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content modal_bkgrd">
+                        <div class="modal-header modal_bkgrd">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+                            <h3 class="modal-title"><span><i class="glyphicon glyphicon-user"></i></span> Enviar Solicitud</h3>
+                        </div>
+                        <div class="modal-body modal_bkgrd">
+                          <div class="te">              
+                          <!--REGISTRO DE UN USUARIO-->
+                          <div class="container alineacion_registro">
+                              <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
+                                      <div class="row">
+                                          <div class="col-xs-6 col-md-6">
+                                              <input class="form-control" name="firstname" placeholder="Nombre(s)" type="text"
+                                                  required autofocus />
+                                          </div>
+                                          <div class="col-xs-6 col-md-6">
+                                              <input class="form-control" name="lastname" placeholder="Apellido(s)" type="text" required />
+                                          </div>
+                                      </div>
+                                      <input class="form-control" name="youremail" placeholder="Correo Electronico" type="email" />
+                                      <input class="form-control" name="reenteremail" placeholder="Re-enter Email" type="email" />
+                                      <input class="form-control" name="password" placeholder="Contrasena" type="password" />
+                                      <label for="">
+                                          Birth Date</label>
+                                      <div class="row">
+                                          <div class="col-xs-4 col-md-4">
+                                              <select class="form-control">
+                                                  <option value="Month">Month</option>
+                                              </select>
+                                          </div>
+                                          <div class="col-xs-4 col-md-4">
+                                              <select class="form-control">
+                                                  <option value="Day">Day</option>
+                                              </select>
+                                          </div>
+                                          <div class="col-xs-4 col-md-4">
+                                              <select class="form-control">
+                                                  <option value="Year">Year</option>
+                                              </select>
+                                          </div>
+                                      </div>
+                                      <label class="radio-inline">
+                                          <input type="radio" name="sex" id="inlineCheckbox1" value="male" />Hombre</label>
+                                      <label class="radio-inline">
+                                          <input type="radio" name="sex" id="inlineCheckbox2" value="female" />Mujer</label>
+                                      <br />
+                                      <br />
+                                      <button class="btn btn-lg btn-primary btn-block" type="submit"> Enviar Solicitud</button>
+                                      </form>
+                                  </div>
+                              </div>
+                          </div>
+                          <!--FIN DE REGISTRO DE UN USUARIO-->
+
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
           </div>
-          
+          <!-- /.modal -->
         </form>
         
         <div class="form-links">
@@ -38,7 +102,7 @@
   </div>       
 </div>
     <script type="text/javascript" scr="js/login.js"></script>
-    <script type="text/javascript" scr="js/bootstrap.min.js"></script>
-    <script type="text/javascript" scr="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>

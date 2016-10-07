@@ -1,0 +1,9 @@
+C:\ITN\Inteligencia Artificial\Unidad 2\P2_U3_RedSemantica\Red_Semantica_P2_U2\Red_Semantica_P2_U2\bin\Debug\Red_Semantica_P2_U2.exe.config
+C:\ITN\Inteligencia Artificial\Unidad 2\P2_U3_RedSemantica\Red_Semantica_P2_U2\Red_Semantica_P2_U2\bin\Debug\Red_Semantica_P2_U2.exe
+C:\ITN\Inteligencia Artificial\Unidad 2\P2_U3_RedSemantica\Red_Semantica_P2_U2\Red_Semantica_P2_U2\bin\Debug\Red_Semantica_P2_U2.pdb
+C:\ITN\Inteligencia Artificial\Unidad 2\P2_U3_RedSemantica\Red_Semantica_P2_U2\Red_Semantica_P2_U2\obj\Debug\Red_Semantica_P2_U2.csprojResolveAssemblyReference.cache
+C:\ITN\Inteligencia Artificial\Unidad 2\P2_U3_RedSemantica\Red_Semantica_P2_U2\Red_Semantica_P2_U2\obj\Debug\Red_Semantica_P2_U2.frmPal.resources
+C:\ITN\Inteligencia Artificial\Unidad 2\P2_U3_RedSemantica\Red_Semantica_P2_U2\Red_Semantica_P2_U2\obj\Debug\Red_Semantica_P2_U2.Properties.Resources.resources
+C:\ITN\Inteligencia Artificial\Unidad 2\P2_U3_RedSemantica\Red_Semantica_P2_U2\Red_Semantica_P2_U2\obj\Debug\Red_Semantica_P2_U2.csproj.GenerateResource.Cache
+C:\ITN\Inteligencia Artificial\Unidad 2\P2_U3_RedSemantica\Red_Semantica_P2_U2\Red_Semantica_P2_U2\obj\Debug\Red_Semantica_P2_U2.exe
+C:\ITN\Inteligencia Artificial\Unidad 2\P2_U3_RedSemantica\Red_Semantica_P2_U2\Red_Semantica_P2_U2\obj\Debug\Red_Semantica_P2_U2.pdb

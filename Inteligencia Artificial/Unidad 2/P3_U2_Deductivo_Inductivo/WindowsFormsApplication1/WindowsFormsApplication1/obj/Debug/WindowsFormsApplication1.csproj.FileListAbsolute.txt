@@ -1,0 +1,9 @@
+C:\ITN\Inteligencia Artificial\Unidad 2\P3_U2_Deductivo_Inductivo\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\ITN\Inteligencia Artificial\Unidad 2\P3_U2_Deductivo_Inductivo\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\ITN\Inteligencia Artificial\Unidad 2\P3_U2_Deductivo_Inductivo\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\ITN\Inteligencia Artificial\Unidad 2\P3_U2_Deductivo_Inductivo\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\ITN\Inteligencia Artificial\Unidad 2\P3_U2_Deductivo_Inductivo\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmPal.resources
+C:\ITN\Inteligencia Artificial\Unidad 2\P3_U2_Deductivo_Inductivo\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\ITN\Inteligencia Artificial\Unidad 2\P3_U2_Deductivo_Inductivo\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\ITN\Inteligencia Artificial\Unidad 2\P3_U2_Deductivo_Inductivo\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\ITN\Inteligencia Artificial\Unidad 2\P3_U2_Deductivo_Inductivo\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb

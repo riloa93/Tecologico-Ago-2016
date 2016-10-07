@@ -57,4 +57,10 @@ sPswd char(12) not null,
 sRoleID int not null
 )
 
-create table Noticias()
+create table Noticias(
+NoticiaID int not null,
+nNombre nchar(50) not null,
+nContenido nvarchar(500),
+nImagen image,
+nFechaPub date not null
+)
