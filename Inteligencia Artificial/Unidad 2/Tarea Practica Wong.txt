@@ -1,0 +1,74 @@
+1)Toda fruta cítrica contiene vitamina C. 
+  piña es una fruta cítrica; 
+Por tanto la piña contiene vitamina C. 
+
+2)Toda figura cuatro lados es un cuadrilátero. 
+  El rectángulo es figura de cuatro lados. 
+Por tanto, el rectángulo cuatro lados es cuadrilátero. 
+
+3)Todo hombre es libre. 
+  Aristóteles es hombre. 
+Por lo tanto se infiere que Aristóteles es libre 
+
+4)Todo metal conduce la electricidad, 	
+  el oro es metal, 
+por lo tanto conduce a la electricidad 
+
+6)Todo mamifero tiene sangre caliente 
+  El humano es mamifero 
+El humano tiene sangre caliente 
+
+7)todo italiano es europeo
+todo romano es italiano
+todo romano es europeo 
+
+8)Todo noruego tiene pelo largo y rubio! 
+Juan es noruego! 
+Juan tiene pelo largo y rubio 
+
+9)Todo politico es sucio! 
+R. Martinez es politico 
+R. Martinez es sucio! 
+
+10)Toda la gente buena va al cielo al morir. 
+Matias es gente buena 
+Matias va al cielo al morir
+
+INDUCTIVO 
+
+
+1)El perro es mamifero y cuadrupedo 
+El gato es mamifero y cuadrupedo 
+Por lo tanto Todo mamifero es cuadrupedo 
+
+2)Manuel es humanoy tiene ojos 
+Miguel es humano y tiene ojos 
+Rosa es humano y tiene ojos 
+Por lo tanto Todo humano tiene ojos 
+
+4)
+Maria es hijo de Bruno y tiene cabello rubio 
+Juan es hijo de Bruno y tiene cabello rubio
+Pedro es hijo de Bruno y tiene cabello rubio
+por lo tanto todo hijo de Bruno tiene cabello rubio 
+
+
+5)Maria es persona y tiene ojos azules 
+Juan es persona y tiene ojos azules 
+Pedro es persona y tiene ojos azules
+por lo que toda persona tiene ojos azules 
+
+9)las gaviotas vuelan y son pajaros 
+los gorriones vuelan y son pajaros 
+los mirlos vuelan y son pajaros 
+Todo lo que vuela es pajaro (conclusion) 
+
+10)Manuel es humanoy tiene ojos 
+Miguel es humano y tiene ojos 
+Rosa es humana y tiene ojos 
+Por lo tanto los humanos tiene ojos 
+
+
+
+deductivo(deduce) argumenta de lo general a lo particular 
+inductivo es lo contrario argumenta lo particular a lo general 
