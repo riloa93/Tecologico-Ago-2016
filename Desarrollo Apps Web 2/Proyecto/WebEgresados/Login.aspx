@@ -22,15 +22,18 @@
     
     <div class="col-md-4">
         <section class="login-form">
-        <form action="#">
-          <img src="./img/Login/icon.png" class="img-responsive" alt="" />
-            <input type="text" name="NoControl" placeholder="Num. de Control" required class="form-control form_cntrl input-lg" runat="server" id="txtNoCtrl" />
-            <input type="password" class="form-control form_cntrl input-lg" id="password" placeholder="Contraseña" required="" runat="server"/>
-            <div class="pwstrength_viewport_progress"></div> 
-          <button type="submit" name="go" class="btn btn-lg btn-primary btn_ses btn-block" runat="server" id="btnSesion">Iniciar Sesión</button>
-          
-          <!--Modal-->
-          <div>
+        <form runat="server">
+          <%--<img src="./img/Login/icon.png" class="img-responsive" alt="" />--%>
+            <!--<input type="text" name="NoControl" placeholder="Num. de Control" required class="form-control form_cntrl input-lg" runat="server" id="txtNoCtrl" />-->
+            <asp:TextBox ID="txtcontrol" runat="server" CssClass="form-control form_cntrl input-lg"></asp:TextBox>
+            <!--<input type="password" class="form-control form_cntrl input-lg" id="password" placeholder="Contraseña" required="" runat="server"/>-->
+            <asp:TextBox ID="txtPassw" runat="server" CssClass="form-control form_cntrl input-lg"></asp:TextBox>
+            <!--<div class="pwstrength_viewport_progress"></div> 
+            <!--<button type="button" class="btn btn-lg btn-primary btn_ses btn-block" runat="server" id="btnSesion" onserverclick="Page_PreInit" value="HTML Serve Control"> Sesión</button>-->
+            <asp:Button ID="btnSsn" runat="server" Text="Iniciar Sesión" CssClass="btn btn-lg btn-primary btn_ses btn-block" OnClick="btnSsn_Click" />
+          </form>
+            <!--Modal-->
+            <div>
             <a class="links_a" data-toggle="modal" data-target="#RegModal">Crear Cuenta</a> | <a class="links_a" data-toggle="modal" data-target="#ConModal">Olvidé mi contraseña</a>
 
             <div class="modal fade" id="RegModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -49,15 +52,15 @@
                                       <div class="row">
                                           <div class="col-xs-6 col-md-6">
                                               <input class="form-control" name="firstname" placeholder="Nombre(s)" type="text"
-                                                  required autofocus />
+                                                  required="required" autofocus  id="Txt_Registro_Nombre" runat="server"/>
                                           </div>
                                           <div class="col-xs-6 col-md-6">
-                                              <input class="form-control" name="lastname" placeholder="Apellido(s)" type="text" required />
+                                              <input class="form-control" name="lastname" placeholder="Apellido(s)" type="text" required="required" id="Txt_Registro_Apellido" runat="server"/>
                                           </div>
                                       </div>
-                                      <input class="form-control" name="youremail" placeholder="Correo Electronico" type="email" />
-                                      <input class="form-control" name="reenteremail" placeholder="Re-enter Email" type="email" />
-                                      <input class="form-control" name="password" placeholder="Contrasena" type="password" />
+                                      <input class="form-control" name="youremail" placeholder="Correo Electronico" type="email" id="Txt_Registro_Email" runat="server" required="required" />
+                                      <input class="form-control" name="reenteremail" placeholder="Re-enter Email" type="email" id="Txt_Registro_ConEmail" runat="server" required="required"/>
+                                      <input class="form-control" name="password" placeholder="Contrasena" type="password"  id="Txt_Registro_Contrasena" runat="server" required="required"/>
                                       <label for="">
                                           Birth Date</label>
                                       <div class="row">
@@ -78,13 +81,13 @@
                                           </div>
                                       </div>
                                       <label class="radio-inline">
-                                          <input type="radio" name="sex" id="inlineCheckbox1" value="male" />Hombre</label>
+                                          <input type="radio" name="sex"  value="male" id="Registro_Hombre" required="required" runat="server" />Hombre</label>
                                       <label class="radio-inline">
-                                          <input type="radio" name="sex" id="inlineCheckbox2" value="female" />Mujer</label>
+                                          <input type="radio" name="sex"  value="female" id="Registro_Mujer" required="required" runat="server"/>Mujer</label>
                                       <br />
                                       <br />
                                       <button class="btn btn-lg btn-primary btn-block" type="submit"> Enviar Solicitud</button>
-                                      </form>
+                                      <!--</form>-->
                                   </div>
                               </div>
                           </div>
@@ -122,39 +125,33 @@
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="name">
-                                                            Name</label>
-                                                        <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                                                            Numero de control: </label>
+                                                        <input type="text" class="form-control" id="NoControl" placeholder="Ingresa tu numero de control" required="required" runat="server"  />
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="email">
-                                                            Email Address</label>
+                                                        <label for="email:">
+                                                            Respuesta:</label>
                                                         <div class="input-group">
-                                                            <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-                                                            </span>
-                                                            <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                                                            <%--<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                                            </span>--%>
+                                                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu respuesta" required="required" /></div>
                                                     </div>
                                                     <div class="form-group">
                                                         <label for="subject">
-                                                            Subject</label>
-                                                        <select id="subject" name="subject" class="form-control" required="required">
-                                                            <option value="na" selected="">Choose One:</option>
-                                                            <option value="service">General Customer Service</option>
-                                                            <option value="suggestions">Suggestions</option>
-                                                            <option value="product">Product Support</option>
+                                                            Pregunta de seguridad</label>
+                                                        <select id="preguntas" name="subject" class="form-control" required="required" runat="server" >
+                                                            <option value="na" selected="">Pregunta de seguridad</option>
+                                                            <option value="comidaFav">Comida favorita</option>
+                                                            <option value="peliculaFav">Pelicula favorita</option>
+                                                            <option value="añoUniv">Año de ingreso a la universidad</option>
+                                                       
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="name">
-                                                            Message</label>
-                                                        <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
-                                                            placeholder="Message"></textarea>
-                                                    </div>
-                                                </div>
+                                              
                                                 <div class="col-md-12">
                                                     <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
-                                                        Send Message</button>
+                                                        Continuar</button>
                                                 </div>
                                             </div>
                                             </form>
