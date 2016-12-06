@@ -25,7 +25,7 @@
                     <section class="login-form">
                             <asp:TextBox ID="txtcontrol" runat="server" CssClass="form-control form_cntrl input-lg" placeholder="No. Control"></asp:TextBox>
                             <asp:TextBox ID="txtPassw" runat="server" CssClass="form-control form_cntrl input-lg" placeholder="Contraseña" TextMode="Password" Style="left: 0px; top: 0px"></asp:TextBox>
-                            <asp:Button ID="btnSsn" runat="server" Text="Iniciar Sesión" CssClass="btn btn-lg btn-primary btn_ses btn-block"/>
+                            <asp:Button ID="btnSsn" runat="server" Text="Iniciar Sesión" CssClass="btn btn-lg btn-primary btn_ses btn-block" OnClick="btnSsn_Click"/>
                             <br />
                             <div class="text-center">
                                 <asp:HyperLink ID="hplCrear" runat="server" CssClass="links_a">Crear cuenta</asp:HyperLink>&nbsp; |
@@ -74,7 +74,10 @@
                                             </div>
                                             <div class="col-xs-3 col-md-3">
                                                 <!--Titulado DropDownList-->
-                                                <asp:DropDownList ID="cmbTitlulado" runat="server" CssClass="form-control"></asp:DropDownList>
+                                                <asp:DropDownList ID="cmbTitlulado" runat="server" CssClass="form-control">
+                                                    <asp:ListItem Value="0">Si</asp:ListItem>
+                                                    <asp:ListItem Value="1">No</asp:ListItem>
+                                                </asp:DropDownList>
                                             </div>
                                             <div class="col-xs-1 col-md-1">
                                                 <!--Fecha Ingreso-->
@@ -120,28 +123,35 @@
                                             </div>
                                             <div class="col-xs-2 col-md-2"></div>
                                             <div class="col-xs-3 col-md-3">
-                                                <asp:TextBox ID="txtTelefono" placeholder="Teléfono" runat="server" CssClass="form-control"></asp:TextBox>
+                                                <asp:TextBox ID="txtTelefono" placeholder="Teléfono" runat="server" CssClass="form-control" TextMode="Phone"></asp:TextBox>
                                             </div>
                                             <div class="col-xs-5 col-md-5">
-                                                <asp:TextBox ID="txtCorreo" placeholder="Correo electrónico" runat="server" CssClass="form-control"></asp:TextBox>
+                                                <asp:TextBox ID="txtCorreo" placeholder="Correo electrónico" runat="server" CssClass="form-control" TextMode="Email"></asp:TextBox>
                                             </div>
                                             <div class="col-xs-2 col-md-2"></div>
                                             <br />
                                             <div class="col-xs-12 col-md-12">
                                                 <asp:Label ID="lblAccess" runat="server" Text="Acceso al sistema"></asp:Label>
                                             </div>
-                                            <div class="col-xs-4 col-md-4"></div>
-                                            <div class="col-xs-4 col-md-4">
-                                                <asp:TextBox ID="txtPaswd" placeholder="Clave de acceso" runat="server" CssClass="form-control"></asp:TextBox>
+                                            <div class="col-xs-12 col-md-12">
+                                                <asp:Label ID="lblRoles" runat="server" Text="Role en el sistema"></asp:Label>
                                             </div>
-                                            <div class="col-xs-4 col-md-4"></div>
+                                            <div class="col-xs-5 col-md-5">
+                                                <asp:DropDownList ID="cmbRoles" runat="server" CssClass="form-control"></asp:DropDownList>
+                                            </div>
+                                            <div class="col-xs-4 col-md-4">
+                                                <asp:TextBox ID="txtPaswd" placeholder="Clave de acceso" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox>
+                                            </div>
+                                            <div class="col-xs-4 col-md-4">
+                                                
+                                            </div>
                                             <!--RoleID Enviarlo-->
                                             <!--Aceptada o no la solicitud-->
                                         </div>
                                     </div>
                                     <div class="col-xs-3 col-md-3"></div>
                                     <div class="col-xs-6 col-md-6">
-                                        <asp:Button ID="btnRegistrarse" runat="server" Text="Enviar Solicitud" CssClass="btn btn-lg btn-primary btn_ses btn-block"></asp:Button>&nbsp;
+                                        <asp:Button ID="btnRegistrarse" runat="server" Text="Enviar Solicitud" CssClass="btn btn-lg btn-primary btn_ses btn-block" OnClick="btnRegistrarse_Click"></asp:Button>&nbsp;
                                     </div>
                                     <div class="col-xs-3 col-md-3"></div>
                                 </div>
@@ -149,6 +159,52 @@
                             <ajaxToolkit:ModalPopupExtender ID="ModalPopupExtender1" runat="server" CancelControlID="btnClose" PopupControlID="ModalRegistro" TargetControlID="hplCrear" BackgroundCssClass="modal_bkgrd"></ajaxToolkit:ModalPopupExtender>
                         </div>
 
+                        <!--MODAL OLVIDE CONTRASENA-->
+                        <div>
+                            <asp:Panel ID="Modal_OlvidarC" runat="server" CssClass="modal-content body_modal">
+                                <div class="modalpopup">
+                                    <asp:Button ID="btnCerrarOlv" runat="server" Text="X" CssClass="close"></asp:Button>
+                                    <asp:Label ID="lblTitOlvidar" runat="server" Text="&lt;span class=&quot;glyphicon glyphicon-question-sign&quot;&gt;&lt;/span&gt;&amp;nbsp; Olvidé Contraseña" CssClass="encabezado_modal"></asp:Label>
+                                </div>
+                                <br />
+                                <div class="container">
+                                    <div class="row" style="padding: 19px;">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 modal_content">
+                                            <div>
+                                                <!--ESTA SECCION ES DEL USUARIO-->
+                                                <div class="col-xs-12 col-md-12 text-center">
+                                                    <asp:Label ID="lblPreguntaOlv" runat="server" Text="Elige tú pregunta de seguridad"></asp:Label>
+                                                </div>
+                                                <div class="col-xs-6 col-md-6" style="margin-left:7%">
+                                                    <!--Pregunta de seguridad-->
+                                                    <asp:DropDownList ID="cmbPregSegOlv" runat="server" CssClass="form-control"></asp:DropDownList>
+                                                </div>
+                                                <!--Respuesta-->
+                                                <div class="col-xs-4 col-md-4">
+                                                    <asp:TextBox ID="txtRespuestaSegOlv" placeholder="Respuesta" runat="server" CssClass="form-control"></asp:TextBox>
+                                                </div>
+                                                <div class="col-xs-5 col-md-5" style="margin-left:7%">
+                                                    <asp:TextBox ID="txtNoCtrlOlv" placeholder="No. Control" runat="server" CssClass="form-control"></asp:TextBox>
+                                                </div>
+                                                <!--Nueva Contraseña-->
+                                                <div class="col-xs-5 col-md-5">
+                                                    <asp:TextBox ID="txtNuevaContraseña" placeholder="Nueva Contraseña" runat="server" CssClass="form-control"></asp:TextBox>
+                                                </div>
+                                                <!--RoleID Enviarlo-->
+                                                <!--Aceptada o no la solicitud-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3 col-md-3"></div>
+                                    <div class="col-xs-6 col-md-6">
+                                        <asp:Button ID="btnRestablecer" runat="server" Text="Restablecer Contraseña" CssClass="btn btn-lg btn-primary btn_ses btn-block" OnClick="btnRestablecer_Click"></asp:Button>&nbsp;
+                                    </div>
+                                    <div class="col-xs-3 col-md-3"></div>
+                                </div>
+                            </asp:Panel>
+                            <ajaxToolkit:ModalPopupExtender ID="ModalOlvidar" runat="server" CancelControlID="btnCerrarOlv" PopupControlID="Modal_OlvidarC" TargetControlID="hplPass" BackgroundCssClass="modal_bkgrd"></ajaxToolkit:ModalPopupExtender>
+                        </div>
+                         <!--FINAL MODAL OLVIDE CONTRASENA-->
                         <div class="form-links">
                             <a href="http://www.itnogales.edu.mx/">Tecnológico de Nogales</a>
                         </div>
