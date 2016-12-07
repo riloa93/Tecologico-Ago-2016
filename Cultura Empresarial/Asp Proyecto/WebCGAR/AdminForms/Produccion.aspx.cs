@@ -9,16 +9,7 @@ public partial class AdminForms_Produccion : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
-    }
-
-    protected void grd_Solicitudes_DataBound(object sender, EventArgs e)
-    {
-
-    }
-
-    protected void grd_Solicitudes_PreRender(object sender, EventArgs e)
-    {
-
+        grdData.DataSource = ClsProduccion.leeProduccion();
+        grdData.DataBind();
     }
 }

@@ -13,61 +13,81 @@
         </div>
     </div>
 
-    <div class="row" style="margin-top:8%;">
-        <h3>
-            <span style="float:left"><asp:Label ID="lblinfo" runat="server"></asp:Label></span>
-            <span style="float:right"><small>Total Solicitudes:</small><asp:Label ID="lblTotalClientes" runat="server" CssClass="label label-warning"></asp:Label></span>
-        </h3>
-        <p>&nbsp;</p><p>&nbsp;</p>
-        <asp:GridView ID="grd_Solicitudes" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered bs-table" Font-Bold="False" OnDataBound="grd_Solicitudes_DataBound" OnPreRender="grd_Solicitudes_PreRender">
-            <EditRowStyle BackColor="#FFFFCC" />
-            <EmptyDataRowStyle CssClass="table table-bordered" ForeColor="Red" />
-            <HeaderStyle BackColor="#337AB7" Font-Bold="True" ForeColor="White" />
-            <emptydatatemplate>
-            ¡No hay solicitudes seleccionadas!  
-            </emptydatatemplate>
-
-             <%--Paginador...--%>        
-            <PagerTemplate>
-                <div class="row" style="margin-top: 20px;">
-                    <div class="col-lg-1" style="text-align: right;">
-                        <h5><asp:Label ID="MessageLabel" Text="Ir a la pág." runat="server" /></h5>
-                    </div>
-                    <div class="col-lg-1" style="text-align: left;">
-                        <h3><asp:DropDownList ID="cmbPaginacion" Width="50px" AutoPostBack="true" runat="server" CssClass="form-control" /></h3>
-                    </div>
-                    <div class="col-lg-10" style="text-align: right;">
-                        <h3><asp:Label ID="CurrentPageLabel" runat="server" CssClass="label label-warning" /></h3>
-                    </div>
-                </div>
-            </PagerTemplate>  
-
+    <div style="margin-top:12%;">
+        <asp:GridView ID="grdData" runat="server" AutoGenerateColumns="False">
             <Columns>
-                <%--CheckBox para seleccionar varios registros...--%>
-                <asp:TemplateField ItemStyle-HorizontalAlign="Center" HeaderStyle-Width="70px">
-                    <ItemTemplate>
-                        <asp:CheckBox ID="chkEliminar" runat="server" AutoPostBack="False"/>
-                    </ItemTemplate>
-                    <HeaderStyle Width="70px"></HeaderStyle>
-                    <ItemStyle HorizontalAlign="Center"></ItemStyle>
-                </asp:TemplateField>            
- 
-            <%--botones de acción sobre los registros...--%>
-                
-                <asp:CommandField ButtonType="Button" DeleteText="Negar" ShowCancelButton="False" ShowDeleteButton="True">
-                <ControlStyle CssClass="btn btn-danger" />
-                </asp:CommandField>
-
-                <asp:TemplateField HeaderText="No. de empleado" ItemStyle-HorizontalAlign="Center" HeaderStyle-Width="50px"></asp:TemplateField>
-                <asp:TemplateField HeaderText="Nombre completo" ItemStyle-HorizontalAlign="Center" HeaderStyle-Width="450px"></asp:TemplateField>
-                <asp:TemplateField HeaderText="Seguro Social"></asp:TemplateField>
-                <asp:TemplateField HeaderText="Dirección"></asp:TemplateField>
-                <asp:TemplateField HeaderText="Télefono"></asp:TemplateField>
-                <asp:TemplateField HeaderText="Correo Electrónico"></asp:TemplateField>
-                <asp:TemplateField HeaderText="Fecha de ingreso"></asp:TemplateField>
-                <asp:TemplateField HeaderText="Contraseña"></asp:TemplateField>
-                <asp:TemplateField HeaderText="Role"></asp:TemplateField>
-                <asp:TemplateField HeaderText="Departamento"></asp:TemplateField>
+                <asp:BoundField DataField="lTipoOrd" HeaderText="Tipo Orden">
+                    <HeaderStyle CssClass="label-primary" ForeColor="White" Font-Size="13pt" HorizontalAlign="Center" VerticalAlign="Middle" Width="80px"></HeaderStyle>
+                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                </asp:BoundField>
+                <asp:BoundField DataField="lPo" HeaderText="PO">
+                    <HeaderStyle CssClass="label-primary" ForeColor="White" Font-Size="13pt" HorizontalAlign="Center" Width="265px"></HeaderStyle>
+                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                </asp:BoundField>
+                <asp:BoundField DataField="lNoOrden" HeaderText="No. Orden">
+                    <HeaderStyle CssClass="label-primary" ForeColor="White" Font-Size="13pt" HorizontalAlign="Center" Width="100px"></HeaderStyle>
+                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                </asp:BoundField>
+                <asp:BoundField DataField="lSemana" HeaderText="No. Semana">
+                    <HeaderStyle CssClass="label-primary" ForeColor="White" Font-Size="13pt" HorizontalAlign="Center" Width="250px" VerticalAlign="Middle"></HeaderStyle>
+                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                </asp:BoundField>
+                <asp:BoundField DataField="lAsignado" HeaderText="Asignado">
+                    <HeaderStyle CssClass="label-primary" ForeColor="White" Font-Size="13pt" HorizontalAlign="Center" VerticalAlign="Middle"></HeaderStyle>
+                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                </asp:BoundField>
+                <asp:BoundField DataField="lVendedor" HeaderText="Vendedor">
+                    <HeaderStyle CssClass="label-primary" ForeColor="White" Font-Size="13pt" HorizontalAlign="Center" VerticalAlign="Middle"></HeaderStyle>
+                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                </asp:BoundField>
+                <asp:BoundField DataField="lEmpresa" HeaderText="Empresa">
+                    <HeaderStyle CssClass="label-primary" ForeColor="White" Font-Size="13pt" HorizontalAlign="Center" VerticalAlign="Middle" Width="100px"></HeaderStyle>
+                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                </asp:BoundField>
+                <asp:BoundField DataField="lCliente" HeaderText="Cliente">
+                    <HeaderStyle CssClass="label-primary" ForeColor="White" Font-Size="13pt" HorizontalAlign="Center" VerticalAlign="Middle" Width="100px"></HeaderStyle>
+                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                </asp:BoundField>
+                <asp:BoundField DataField="lProyecto" HeaderText="Proyecto">
+                    <HeaderStyle CssClass="label-primary" ForeColor="White" Font-Size="13pt" HorizontalAlign="Center" VerticalAlign="Middle"></HeaderStyle>
+                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                </asp:BoundField>
+                <asp:BoundField DataField="lCantidad" HeaderText="Cantidad">
+                    <HeaderStyle CssClass="label-primary" ForeColor="White" Font-Size="13pt" HorizontalAlign="Center" VerticalAlign="Middle"></HeaderStyle>
+                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                </asp:BoundField>
+                <asp:BoundField DataField="lsVentas" HeaderText="Ventas">
+                <HeaderStyle CssClass="label-primary" Font-Size="13pt" ForeColor="White" HorizontalAlign="Center" VerticalAlign="Middle" />
+                <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                </asp:BoundField>
+                <asp:BoundField DataField="lsCompras" HeaderText="Compras">
+                <HeaderStyle CssClass="label-primary" Font-Size="13pt" ForeColor="White" HorizontalAlign="Center" VerticalAlign="Middle" Width="90px" />
+                <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                </asp:BoundField>
+                <asp:BoundField DataField="lsDiseno" HeaderText="Diseño">
+                <HeaderStyle CssClass="label-primary" Font-Size="13pt" ForeColor="White" HorizontalAlign="Center" VerticalAlign="Middle" Width="90px" />
+                <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                </asp:BoundField>
+                <asp:BoundField DataField="lsProd" HeaderText="Producción">
+                <HeaderStyle CssClass="label-primary" Font-Size="13pt" ForeColor="White" HorizontalAlign="Center" VerticalAlign="Middle" Width="90px" />
+                <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                </asp:BoundField>
+                <asp:BoundField DataField="lsEnsamble" HeaderText="Ensamble">
+                <HeaderStyle CssClass="label-primary" Font-Size="13pt" ForeColor="White" HorizontalAlign="Center" VerticalAlign="Middle" Width="90px" />
+                <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                </asp:BoundField>
+                <asp:BoundField DataField="lsCalidad" HeaderText="Calidad">
+                <HeaderStyle CssClass="label-primary" Font-Size="13pt" ForeColor="White" HorizontalAlign="Center" VerticalAlign="Middle" Width="90px" />
+                <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                </asp:BoundField>
+                <asp:BoundField DataField="lFechaRequisision" HeaderText="Fecha Requisisión">
+                <HeaderStyle CssClass="label-primary" Font-Size="13pt" ForeColor="White" HorizontalAlign="Center" VerticalAlign="Middle" Width="150px" />
+                <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                </asp:BoundField>
+                <asp:BoundField DataField="lFechaEntrega" HeaderText="Fecha de Entrega">
+                <HeaderStyle CssClass="label-primary" Font-Size="13pt" ForeColor="White" HorizontalAlign="Center" VerticalAlign="Middle" Width="130px" />
+                <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                </asp:BoundField>
             </Columns>
         </asp:GridView>
     </div>

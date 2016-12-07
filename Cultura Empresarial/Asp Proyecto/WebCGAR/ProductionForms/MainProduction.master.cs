@@ -5,12 +5,18 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.Security;
+using System.Data;
 
 public partial class ProductionForms_MainProduction : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (!IsPostBack)
+        {
+            DataTable T = ClsEmpleados.buscaEmpleadoID(HttpContext.Current.User.Identity.Name);
+            lblNameSes.Text = T.Rows[0][1].ToString();
+            lblUsrSes.Text = T.Rows[0][5].ToString();
+        }
     }
 
     protected void lnkSes_Click(object sender, EventArgs e)

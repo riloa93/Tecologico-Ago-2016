@@ -11,25 +11,28 @@ public partial class AdminForms_MainAdmin : System.Web.UI.Page
     public int totalSeleccionados = 0;
     protected void Page_Load(object sender, EventArgs e)
     {
-        DataTable T = ClsSolicitudes.leerSolicitudes();
-
-        if (T.Rows.Count > 0)
+        if (!IsPostBack)
         {
-            grd_Solicitudes.DataSource = T;
-            grd_Solicitudes.DataBind();
+            DataTable T = ClsSolicitudes.leerSolicitudes();
 
-            for (int i = 0; i < T.Rows.Count; i++)
+            if (T.Rows.Count > 0)
             {
-                grd_Solicitudes.Rows[i].Cells[2].Text = T.Rows[i][0].ToString().Trim();
-                grd_Solicitudes.Rows[i].Cells[3].Text = T.Rows[i][1].ToString().Trim();
-                grd_Solicitudes.Rows[i].Cells[4].Text = T.Rows[i][2].ToString().Trim();
-                grd_Solicitudes.Rows[i].Cells[5].Text = T.Rows[i][3].ToString().Trim();
-                grd_Solicitudes.Rows[i].Cells[6].Text = T.Rows[i][4].ToString().Trim();
-                grd_Solicitudes.Rows[i].Cells[7].Text = T.Rows[i][5].ToString().Trim();
-                grd_Solicitudes.Rows[i].Cells[8].Text = T.Rows[i][6].ToString().Trim();
-                grd_Solicitudes.Rows[i].Cells[9].Text = T.Rows[i][8].ToString().Trim();
-                grd_Solicitudes.Rows[i].Cells[10].Text = T.Rows[i][9].ToString().Trim();
-                grd_Solicitudes.Rows[i].Cells[11].Text = T.Rows[i][10].ToString().Trim();
+                grd_Solicitudes.DataSource = T;
+                grd_Solicitudes.DataBind();
+
+                for (int i = 0; i < T.Rows.Count; i++)
+                {
+                    grd_Solicitudes.Rows[i].Cells[2].Text = T.Rows[i][0].ToString().Trim();
+                    grd_Solicitudes.Rows[i].Cells[3].Text = T.Rows[i][1].ToString().Trim();
+                    grd_Solicitudes.Rows[i].Cells[4].Text = T.Rows[i][2].ToString().Trim();
+                    grd_Solicitudes.Rows[i].Cells[5].Text = T.Rows[i][3].ToString().Trim();
+                    grd_Solicitudes.Rows[i].Cells[6].Text = T.Rows[i][4].ToString().Trim();
+                    grd_Solicitudes.Rows[i].Cells[7].Text = T.Rows[i][5].ToString().Trim();
+                    grd_Solicitudes.Rows[i].Cells[8].Text = T.Rows[i][6].ToString().Trim();
+                    grd_Solicitudes.Rows[i].Cells[9].Text = T.Rows[i][8].ToString().Trim();
+                    grd_Solicitudes.Rows[i].Cells[10].Text = T.Rows[i][9].ToString().Trim();
+                    grd_Solicitudes.Rows[i].Cells[11].Text = T.Rows[i][10].ToString().Trim();
+                }
             }
         }
     }
@@ -124,7 +127,7 @@ public partial class AdminForms_MainAdmin : System.Web.UI.Page
 
     protected void btnAceptarSeleccionados_Click(object sender, EventArgs e)
     {
-        DataTable T = ClsDepartamentos.buscaDepartamento();
+        DataTable T = ClsDepartamentos.leeDepartamentos();
         string idDep;
 
         if (T.Rows.Count > 0)
@@ -152,18 +155,6 @@ public partial class AdminForms_MainAdmin : System.Web.UI.Page
                 lblinfo.Text = " ¡Se ha producido un error al intentar modificar la solicitud! "; lblinfo.CssClass = "label label-danger";
             }
         }
-        /*for (int i = 0; i < grd_Solicitudes.Rows.Count; i++)
-        {
-            CheckBox chk = (CheckBox)grd_Solicitudes.Rows[i].FindControl("chkEliminar");
-            if (chk.Checked)
-            {
-                lblinfo.Text = " ¡Solicitud Aceptada! "; lblinfo.CssClass = "label label-success";
-            }
-            else
-            {
-                lblinfo.Text = " ¡Se ha producido un error al intentar modificar la solicitud! "; lblinfo.CssClass = "label label-danger";
-            }
-        }*/
         //lblinfo.Text = " ¡Solicitud Aceptada! "; lblinfo.CssClass = "label label-success";
 
         //lblinfo.Text = " ¡Se ha producido un error al intentar modificar la solicitud! "; lblinfo.CssClass = "label label-danger";

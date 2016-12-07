@@ -1,9 +1,10 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="AdminForms_AdminMaster" %>
 
 <!DOCTYPE html>
-
+<meta charset="utf-8">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    
     <title>C.G. & A.R. Software</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
@@ -24,14 +25,14 @@
                         </div>
                         <div class="navi">
                             <ul>
-                                <li class="active"><asp:LinkButton ID="LinkButton1" runat="server" CssClass="fa fa-home" Font-Names="Calibri"><span class="glyphicon glyphicon-home hidden-sm">&nbsp;Principal</span></asp:LinkButton></li>
-                                <li><asp:LinkButton ID="LinkButton2" runat="server" CssClass="fa fa-tasks"><span class="glyphicon glyphicon-tasks hidden-sm">&nbsp;Listas de Producción</span></asp:LinkButton></li>
-                                <li><asp:LinkButton ID="LinkButton3" runat="server" CssClass="fa fa-tasks"><span class="glyphicon glyphicon-transfer  hidden-sm">&nbsp;Contabilidad</span></asp:LinkButton></li>
-                                <li><asp:LinkButton ID="LinkButton4" runat="server" CssClass="fa fa-tasks"><span class="glyphicon glyphicon-usd hidden-sm">&nbsp;Nómina</span></asp:LinkButton></li>
-                                <li><asp:LinkButton ID="LinkButton5" runat="server" CssClass="fa fa-bar-chart"><span class="glyphicon glyphicon-dashboard hidden-sm">&nbsp;Estadísticas</span></asp:LinkButton></li>
-                                <li><asp:LinkButton ID="LinkButton6" runat="server" CssClass="fa fa-user"><span class="glyphicon glyphicon-briefcase hidden-sm">&nbsp;Departamentos</span></asp:LinkButton></li>
-                                <li><asp:LinkButton ID="LinkButton7" runat="server" CssClass="fa fa-calendar"><span class="glyphicon glyphicon-user hidden-sm">&nbsp;Empleados</span></asp:LinkButton></li>
-                                <li><asp:LinkButton ID="LinkButton8" runat="server" CssClass="fa fa-cog"><span class="glyphicon glyphicon-cog hidden-sm">&nbsp;Configuración</span></asp:LinkButton></li>
+                                <li class="active"><asp:LinkButton ID="lnkbtnPrincipal" runat="server" CssClass="fa fa-home" Font-Names="Calibri" OnClick="lnkbtnPrincipal_Click"><span class="glyphicon glyphicon-home hidden-sm">&nbsp;Principal</span></asp:LinkButton></li>
+                                <li><asp:LinkButton ID="lnkbtnProduccion" runat="server" CssClass="fa fa-tasks" OnClick="lnkbtnProduccion_Click"><span class="glyphicon glyphicon-tasks hidden-sm">&nbsp;Listas de Producción</span></asp:LinkButton></li>
+                                <li><asp:LinkButton ID="lnkbtnContabilidad" runat="server" CssClass="fa fa-tasks" OnClick="lnkbtnContabilidad_Click"><span class="glyphicon glyphicon-transfer  hidden-sm">&nbsp;Contabilidad</span></asp:LinkButton></li>
+                                <li><asp:LinkButton ID="lnkbtnNomina" runat="server" CssClass="fa fa-tasks" OnClick="lnkbtnNomina_Click"><span class="glyphicon glyphicon-usd hidden-sm">&nbsp;Nómina</span></asp:LinkButton></li>
+                                <li><asp:LinkButton ID="lnkbtnEstadisticas" runat="server" CssClass="fa fa-bar-chart" OnClick="lnkbtnEstadisticas_Click"><span class="glyphicon glyphicon-dashboard hidden-sm">&nbsp;Estadísticas</span></asp:LinkButton></li>
+                                <li><asp:LinkButton ID="lnkbtnDepartamentos" runat="server" CssClass="fa fa-user" OnClick="lnkbtnDepartamentos_Click"><span class="glyphicon glyphicon-briefcase hidden-sm">&nbsp;Departamentos</span></asp:LinkButton></li>
+                                <li><asp:LinkButton ID="lnkbtnEmpleados" runat="server" CssClass="fa fa-calendar" OnClick="lnkbtnEmpleados_Click"><span class="glyphicon glyphicon-user hidden-sm">&nbsp;Empleados</span></asp:LinkButton></li>
+                                <li><asp:LinkButton ID="lnkbtnConfiguracion" runat="server" CssClass="fa fa-cog" OnClick="lnkbtnConfiguracion_Click"><span class="glyphicon glyphicon-cog hidden-sm">&nbsp;Configuración</span></asp:LinkButton></li>
                             </ul>
                         </div>
                     </div>

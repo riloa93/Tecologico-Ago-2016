@@ -42,10 +42,14 @@
                                 <br />
                                 <div class="container">
                                     <div class="row" style="padding: 19px;">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                            <asp:Label ID="lblOperacion" runat="server" Text=""></asp:Label>
+                                        </div>                                        
+                                        <br />
                                         <div class="col-xs-12 col-sm-12 col-md-12 modal_content">
                                             <!--ESTA SECCION ES DE LA INFORMACION UNIVERSITARIA-->
                                             <div class="text-center">
-                                                <asp:Label ID="lblUni" runat="server" Text="Información universitaria"></asp:Label>
+                                                <asp:Label ID="lblUni" runat="server" Text="Información universitaria" Font-Names="Calibri" Font-Size="15" Font-Bold="True"></asp:Label>
                                             </div>
 
                                             <div class="col-xs-6 col-md-6">
@@ -56,61 +60,60 @@
                                             </div>
 
                                             <div class="col-xs-3 col-md-3">
-                                                <asp:Label ID="lblCarrera" runat="server" Text="Carrera"></asp:Label>
+                                                <asp:Label ID="lblCarrera" runat="server" Text="Carrera" Font-Names="Calibri" Font-Bold="True"></asp:Label>
                                             </div>
                                             <div class="col-xs-3 col-md-3">
-                                                <asp:Label ID="lblTitulado" runat="server" Text="Titulado"></asp:Label>
+                                                <asp:Label ID="lblTitulado" runat="server" Text="Titulado" Font-Bold="True" Font-Names="Calibri"></asp:Label>
                                             </div>
                                             <div class="col-xs-3 col-md-3">
-                                                <asp:Label ID="LblIngreso" runat="server" Text="Fecha de ingreso"></asp:Label>
+                                                <asp:Label ID="LblIngreso" runat="server" Text="Fecha de ingreso" Font-Names="Calibri" Font-Bold="True"></asp:Label>
                                             </div>
                                             <div class="col-xs-3 col-md-3">
-                                                <asp:Label ID="lblEgreso" runat="server" Text="Fecha de egreso"></asp:Label>
+                                                <asp:Label ID="lblEgreso" runat="server" Text="Fecha de egreso" Font-Bold="True" Font-Names="Calibri"></asp:Label>
                                             </div>
 
                                             <div class="col-xs-3 col-md-3">
                                                 <!--Carrera ID y Nombre DropDownList-->
                                                 <asp:DropDownList ID="cmbCarrera" runat="server" CssClass="form-control"></asp:DropDownList>
                                             </div>
-                                            <div class="col-xs-3 col-md-3">
+                                            <div class="col-xs-1 col-md-1">
                                                 <!--Titulado DropDownList-->
                                                 <asp:DropDownList ID="cmbTitlulado" runat="server" CssClass="form-control">
                                                     <asp:ListItem Value="0">Si</asp:ListItem>
                                                     <asp:ListItem Value="1">No</asp:ListItem>
                                                 </asp:DropDownList>
                                             </div>
-                                            <div class="col-xs-1 col-md-1">
+                                            <div class="col-xs-4 col-md-4">
                                                 <!--Fecha Ingreso-->
-                                                <asp:DropDownList ID="cmbDiaIng" runat="server" CssClass="form-control"></asp:DropDownList>
+                                                <asp:TextBox ID="txtFechaIngreso" placeholder="Fecha de ingreso" runat="server" CssClass="form-control" TextMode="Date"></asp:TextBox>
                                             </div>
-                                            <div class="col-xs-1 col-md-1">
-                                                <asp:DropDownList ID="cmbMesIng" runat="server" CssClass="form-control"></asp:DropDownList>
-                                            </div>
-                                            <div class="col-xs-1 col-md-1">
-                                                <asp:DropDownList ID="cmbAnoIng" runat="server" CssClass="form-control"></asp:DropDownList>
-                                            </div>
-
-                                            <div class="col-xs-1 col-md-1">
+                                            <div class="col-xs-4 col-md-4">
                                                 <!--Fecha Egreso-->
-                                                <asp:DropDownList ID="cmbDiaEgr" runat="server" CssClass="form-control"></asp:DropDownList>
+                                                <asp:TextBox ID="txtFechaEgreso" placeholder="Fecha de ingreso" runat="server" CssClass="form-control" TextMode="Date"></asp:TextBox>
                                             </div>
-                                            <div class="col-xs-1 col-md-1">
-                                                <asp:DropDownList ID="cmbMesEgr" runat="server" CssClass="form-control"></asp:DropDownList>
+                                             <br />
+                                            <div class="col-xs-2 col-md-2"></div>
+                                            <div class="col-xs-3 col-md-3">
+                                                <asp:TextBox ID="txtTelefono" placeholder="Teléfono" runat="server" CssClass="form-control" TextMode="Phone"></asp:TextBox>
                                             </div>
-                                            <div class="col-xs-1 col-md-1">
-                                                <asp:DropDownList ID="cmbAnoEgr" runat="server" CssClass="form-control"></asp:DropDownList>
+                                            <div class="col-xs-5 col-md-5">
+                                                <asp:TextBox ID="txtCorreo" placeholder="Correo electrónico" runat="server" CssClass="form-control" TextMode="Email"></asp:TextBox>
                                             </div>
-
+                                            <div class="col-xs-2 col-md-2"></div>
+                                            <br />
                                             <!--SECCION PROFESIONAL-->
-                                            <div class="text-center">
-                                                <asp:Label ID="lblEmpresas" runat="server" Text="Información profesional"></asp:Label>
+                                            <div class="col-xs-12 col-md-12 text-center">
+                                                <asp:Label ID="lblEmpresas" runat="server" Text="Información profesional" Font-Names="Calibri" Font-Bold="True" Font-Size="15"></asp:Label>
                                             </div>
                                             <div class="col-xs-12 col-md-12">
-                                                <asp:Label ID="lblTrabaja" runat="server" Text="Trabaja"></asp:Label>
+                                                <asp:Label ID="lblTrabaja" runat="server" Text="Trabaja" Font-Bold="True" Font-Names="Calibri"></asp:Label>
                                             </div>
                                             <div class="col-xs-1 col-md-1">
                                                 <!--Trabaja DropDownList-->
-                                                <asp:DropDownList ID="cmbTrabaja" runat="server" CssClass="form-control"></asp:DropDownList>
+                                                <asp:DropDownList ID="cmbTrabaja" runat="server" CssClass="form-control">
+                                                    <asp:ListItem Value="0">Si</asp:ListItem>
+                                                    <asp:ListItem Value="1">No</asp:ListItem>
+                                                </asp:DropDownList>
                                             </div>
                                             <div class="col-xs-4 col-md-4">
                                                 <asp:TextBox ID="txtEmpresa" placeholder="Empresa" runat="server" CssClass="form-control"></asp:TextBox>
@@ -122,22 +125,18 @@
                                                 <asp:TextBox ID="txtContacto" placeholder="Contacto" runat="server" CssClass="form-control"></asp:TextBox>
                                             </div>
                                             <div class="col-xs-2 col-md-2"></div>
-                                            <div class="col-xs-3 col-md-3">
-                                                <asp:TextBox ID="txtTelefono" placeholder="Teléfono" runat="server" CssClass="form-control" TextMode="Phone"></asp:TextBox>
-                                            </div>
-                                            <div class="col-xs-5 col-md-5">
-                                                <asp:TextBox ID="txtCorreo" placeholder="Correo electrónico" runat="server" CssClass="form-control" TextMode="Email"></asp:TextBox>
-                                            </div>
-                                            <div class="col-xs-2 col-md-2"></div>
                                             <br />
-                                            <div class="col-xs-12 col-md-12">
-                                                <asp:Label ID="lblAccess" runat="server" Text="Acceso al sistema"></asp:Label>
+                                            <div class="col-xs-12 col-md-12 text-center">
+                                                <asp:Label ID="lblAccess" runat="server" Text="Acceso al sistema" Font-Names="Calibri" Font-Size="15" Font-Bold="True"></asp:Label>
                                             </div>
                                             <div class="col-xs-12 col-md-12">
-                                                <asp:Label ID="lblRoles" runat="server" Text="Role en el sistema"></asp:Label>
+                                                <asp:Label ID="lblPregunta" runat="server" Text="Elige una pregunta de seguridad y su respuesta" Font-Bold="True" Font-Names="Calibri"></asp:Label>
                                             </div>
-                                            <div class="col-xs-5 col-md-5">
-                                                <asp:DropDownList ID="cmbRoles" runat="server" CssClass="form-control"></asp:DropDownList>
+                                            <div class="col-xs-4 col-md-4">
+                                                <asp:DropDownList ID="cmbPreguntaSeguridad" runat="server" CssClass="form-control"></asp:DropDownList>
+                                            </div>
+                                            <div class="col-xs-4 col-md-4">
+                                                <asp:TextBox ID="txtRespuesta" placeholder="Respuesta" runat="server" CssClass="form-control"></asp:TextBox>
                                             </div>
                                             <div class="col-xs-4 col-md-4">
                                                 <asp:TextBox ID="txtPaswd" placeholder="Clave de acceso" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox>
@@ -172,8 +171,8 @@
                                         <div class="col-xs-12 col-sm-12 col-md-12 modal_content">
                                             <div>
                                                 <!--ESTA SECCION ES DEL USUARIO-->
-                                                <div class="col-xs-12 col-md-12 text-center">
-                                                    <asp:Label ID="lblPreguntaOlv" runat="server" Text="Elige tú pregunta de seguridad"></asp:Label>
+                                                <div class="col-xs-8 col-md-8 text-center">
+                                                    <asp:Label ID="lblPreguntaOlv" runat="server" Text="Elige tú pregunta de seguridad" Font-Bold="True" Font-Names="Calibri" Font-Size="15"></asp:Label>
                                                 </div>
                                                 <div class="col-xs-6 col-md-6" style="margin-left:7%">
                                                     <!--Pregunta de seguridad-->

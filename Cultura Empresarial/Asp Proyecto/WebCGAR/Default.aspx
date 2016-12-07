@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta name="tipo_contenido" content="text/html;" http-equiv="content-type" charset="utf-8" />
     <title>Login</title>
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />

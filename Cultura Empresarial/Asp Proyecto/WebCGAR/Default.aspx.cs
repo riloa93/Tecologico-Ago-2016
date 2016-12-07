@@ -20,16 +20,15 @@ public partial class _Default : System.Web.UI.Page
         if (ChkPwr != "")
         {
             string[] R = ChkPwr.Split(',');
-            if (R[3] == "T")
+            if (R[3] == "A")
             {
                 FormsAuthenticationTicket Authticket = new FormsAuthenticationTicket(1,
-                R[1], DateTime.Now, DateTime.Now.AddMinutes(30), false, R[0], FormsAuthentication.FormsCookiePath);
+                R[1], DateTime.Now, DateTime.Now.AddMinutes(10), false, R[0], FormsAuthentication.FormsCookiePath);
 
                 string encTicket = FormsAuthentication.Encrypt(Authticket);
                 Response.Cookies.Add(new HttpCookie(FormsAuthentication.FormsCookieName, encTicket));
-                //e.Authenticated = true;
 
-                if (R[0] == "Administrador") Response.Redirect("~/AdminForms/MainAdmin.aspx");
+                if (R[0] == "IT") Response.Redirect("~/AdminForms/MainAdmin.aspx");
                 else if (R[0] == "Ensamble") Response.Redirect("~/AssemblyForms/MainAssembly.aspx");
                 else if (R[0] == "Contabilidad") Response.Redirect("~/ContabilityForms/MainContability.aspx");
                 else if (R[0] == "Diseño") Response.Redirect("~/DesignForms/MainDesign.aspx");
@@ -38,6 +37,7 @@ public partial class _Default : System.Web.UI.Page
                 else if (R[0] == "Calidad") Response.Redirect("~/QualityForms/MainQuiality.aspx");
                 else if (R[0] == "Ventas") Response.Redirect("~/SalesForms/MainSales.aspx");
             }
+            else ScriptManager.RegisterStartupScript(this, GetType(), "alertMessage", "alert('Error: El usuario no está autorizado para acceder.');", true);
         }
         else
         {
